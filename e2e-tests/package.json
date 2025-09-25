@@ -1,0 +1,33 @@
+{
+  "name": "playwright-tests",
+  "version": "1.0.0",
+  "description": "Automation suite for Hudl™️",
+  "main": "index.js",
+  "scripts": {
+    "test:local": "npx playwright test",
+    "test:regression": "CI=true npm run test:local -- --project chromium --project \"mobile chrome\"",
+    "test:regression-reruns": "CI=true npm run test:local -- --last-failed --pass-with-no-tests --project chromium --project \"mobile chrome\" --retries 2",
+    "test:local-ui": "npx playwright test --ui",
+    "prettier:check": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
+    "eslint:check": "npx eslint .",
+    "eslint:fix": "npx eslint --fix .",
+    "code:check": "npm run eslint:check && npm run prettier:check",
+    "code:fix": "npm run eslint:fix && npm run prettier:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.36.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "dotenv": "^17.2.2",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.2.2",
+    "globals": "^16.4.0",
+    "prettier": "3.6.2"
+  }
+}
