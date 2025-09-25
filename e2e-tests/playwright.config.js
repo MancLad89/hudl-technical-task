@@ -63,37 +63,6 @@ module.exports = defineConfig({
     navigationTimeout: 30000,
   },
 
-  /* Configure projects for major browsers */
-  // projects: [
-  //   {
-  //     name: 'chromium',
-  //     use: {
-  //       ...devices['Desktop Chrome'],
-  //       permissions: ['clipboard-read'],
-  //       bypassCSP: true,
-  //       acceptInsecureCerts: true,
-  //       w3c: false,
-  //       launchOptions: {
-  //         args: ['--disable-web-security'],
-  //       },
-  //     },
-  //   },
-
-  /* Test against mobile viewports. */
-  // {
-  //   name: 'Mobile Chrome',
-  //   use: {
-  //     ...devices['Pixel 5'],
-  //     permissions: ['clipboard-read'],
-  //     bypassCSP: true,
-  //     acceptInsecureCerts: true,
-  //     w3c: false,
-  //     launchOptions: {
-  //       args: ['--disable-web-security'],
-  //     },
-  //   },
-  // },
-
   projects: [
     {
       name: 'chromium',
