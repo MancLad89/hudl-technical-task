@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd e2e-tests
-          npm install
+          npm ci
 
       - name: Install playwright browsers
         run: |
